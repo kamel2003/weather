@@ -1,0 +1,82 @@
+body{
+    /* background-color: #6E686C; */
+    background-image: linear-gradient(to bottom, #6E686C, #F7F7),url(../images/weatherImage2.jpg);
+    background-size: 100% 100%;
+    /* background-repeat: no-repeat; */
+
+}
+
+.navbar {
+    background-color: #1E202B !important;
+}
+
+.branding {
+    display: flex;
+}
+
+.site-title {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-size: 1.1428571429em;
+    color: white;
+}
+
+.site-header .branding .logo-type {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-description {
+    font-size: 10px;
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8;
+
+}
+
+ul li a {
+    color: white !important;
+    margin-left: 10px;
+    border: 2px solid transparent !important;
+    border-radius: 20px;
+    transition:all 1s;
+}
+
+ul li a:hover {
+    color: #009AD8 !important;
+    border: 2px solid #009AD8 !important;
+    border-radius: 20px;
+
+}
+
+.input-group input{
+    /* background-color: #1E202B !important; */
+    border-radius: 100px !important;
+    padding: 10px;
+}
+.top{
+    background-color: #262936;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 2px;
+}
+.color-1{
+    background-color: #323544;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.color-11{
+    background-color: #262936;
+    color: rgba(255, 255, 255, 0.5);
+}
+.day{
+    background-color: #323544a6;
+}
+
+
+
+.my-temb{
+    color: #fff !important;
+}
+.inner{
+    height: 100%;
+}

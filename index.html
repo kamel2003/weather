@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Assignment 12 js</title>
+</head>
+
+<body>
+
+  <!-- navigation -->
+
+  <nav class="navbar  navbar-expand-lg bg-body-tertiary py-5">
+    <div class="container">
+      <a class="branding" href="/">
+        <img src="https://routeweather.netlify.app/images/logo@2x.png" alt="" class="logo" width="64" height="38">
+
+        <div class="logo-type ms-3">
+          <a class="site-title text-decoration-none">Weather</a>
+          <a class="site-description text-decoration-none">tagline goes here</a>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class=" container my-5 py-2 w-75 ">
+    <div class="input-group mb-3">
+      <input type="text" id="searchLocation" class="form-control" placeholder="Find your location..."
+        aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn btn-primary border rounded-4" type="button" id="button-addon2">Search</button>
+    </div>
+
+    <div class="content">
+      <div class="row g-0 my-5">
+
+        <div class="col-lg-4 ">
+          <div class="inner color-1">
+            <div class="d-flex justify-content-between top">
+              <span id="firstDay"></span>
+              <div>
+                <span id="dayNumber"></span>
+                <span id="monthName"></span>
+              </div>
+            </div>
+
+            <div class="city my-4">
+              <span class="ms-3" id="theCity"></span>
+            </div>
+
+            <div class="temb text-center fs-1">
+              <span id="theTemp" class="my-temb fw-light text-white fw-bold"></span>
+            </div>
+
+            <div class="forecast-icon">
+              <img id="theIcon" src="" alt="" width="90">
+            </div>
+
+            <div>
+              <span id="weatherCondition" class="ms-3"></span>
+            </div>
+
+            <div class="m-4 d-flex gap-5">
+              <div>
+                <i class="fa-solid fa-umbrella fs-4"></i>
+                <span id="theHumidity"></span>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-wind fs-4"></i>
+                <span id="windKph"></span>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-compass fs-4"></i>
+                <span id="windSpeed"></span>
+              </div>
+
+              <!-- <span><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="">18km/h</span>
+              <span><img src="https://cdn.weatherapi.com/weather/64x64/night/113.png" alt="">East</span> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="inner color-11 ">
+
+            <div class="text-center top ">
+              <span class="day" id="nextDay"></span>
+            </div>
+
+            <div class="d-flex align-items-center flex-column">
+              <div class="forecast-icon my-4">
+                <img id="secDayIcon" src="" alt="" width="48">
+              </div>
+              <div id="secDayMxTemp" class="degree fs-2 text-white fs-3 mt-3 "></div>
+              <small class="mt-3" id="secDayMinTemp"></small>
+              <div id="secDayText" class="custom text-warning fs-3 mt-3"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="inner color-1 ">
+
+            <div class="text-center top ">
+              <span class="day" id="therdDay"></span>
+            </div>
+
+            <div class="d-flex align-items-center flex-column">
+              <div class="forecast-icon my-4">
+                <img id="therdDayIcon" src="" alt="" width="48">
+              </div>
+              <div id="therdDayMxTemp" class="degree fs-2 text-white fs-3 mt-3 "></div>
+              <small class="mt-3" id="therdDayMinTemp"></small>
+              <div id="therdDayText" class="custom text-warning fs-3 mt-3"></div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
